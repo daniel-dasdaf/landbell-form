@@ -1,0 +1,76 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+body {
+  display: flex;
+  place-items: center;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.form{
+  background-color:#e5e5e5;
+  padding:1rem;
+  border-radius: 10px;
+}
+
+.form .form_input{
+  display:flex;
+  align-items: flex-start;
+  flex-direction:column;
+  margin: 10px 0px;
+}
+.form .form_input label{
+  color: #1b1b1b;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.form .form_input input, .form .form_input select{
+  border: none;
+  outline: none;
+  background-color: #c4c4c4;
+  padding: 5px;
+}
+button{
+  outline:none;
+  border: none;
+  margin: 5px;
+  padding:5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="button"]{
+  background-color: #ecf0f1;
+  color: #959a93;
+  transition: background-color .2s linear;
+}
+button[type="button"]:hover{
+  background-color: #959a93;
+  color: #ecf0f1;
+}
+button[type="submit"]{
+  background-color: #0275d8;
+  color: #ffffff;
+  transition: background-color .2s linear;
+}
+button[type="submit"]:hover{
+  background-color: #339cf5;
+}
+button[type="reset"]{
+  background-color: #bb2a33;
+  color: #ffffff;
+  transition: background-color .2s linear;
+}
+button[type="reset"]:hover{
+  background-color: #bb2a33;
+}
