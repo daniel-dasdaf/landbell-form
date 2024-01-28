@@ -1,13 +1,13 @@
 import { reactive } from 'vue';
 
 export const stateData = reactive({
-    form: JSON.parse(localStorage.getItem('test_form')) || [],
+    form: JSON.parse(localStorage.getItem('landbell_form')) || [],
     setForm(data){
         this.form.push(data);
-        localStorage.setItem('test_form', JSON.stringify(this.form));
+        localStorage.setItem('landbell_form', JSON.stringify(this.form));
     },
     clearForm(){
         this.form = [];
-        localStorage.removeItem('test_form');
+        localStorage.removeItem('landbell_form');
     }
 })
